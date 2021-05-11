@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+@media screen and (max-width: 767px) {
+	#topbar{
+		position: unset !important;
+		padding: 15px 0px !important;
+	}
+	#topbar .container .top-right .top-right-logo img {
+		max-height: 62px !important;
+	}
+	#topbar .container .top-left .top-left-inner .top-logo img {
+		max-height: 62px !important;
+	}
+	.profile-satting {
+		top: 92px !important;
+	}
+	#topbar .container .top-left .top-left-inner {
+		display: block !important;
+	}
+	#topbar .container .top-left .top-left-inner .top-logo {
+		text-align: left;
+
+	}
+	#topbar .container .top-left .top-left-inner .top-search-bar .top-search-bar-inner {
+		position: unset !important;
+		top: 0;
+		transform: translateY(0);
+	}
+	#topbar .container .top-left .top-left-inner .top-search-bar .top-search-bar-inner .top-search-bar-input input {
+		padding: 0 24px 0 36px;
+	}
+	#topbar .container .top-left .top-left-inner .top-search-bar {
+		display: none;
+	}
+	#topbar .container .top-left .top-left-inner .top-search-bar .top-search-bar-inner{
+		justify-content: center;
+	}
+	.st-cart-panel {
+	   right: 0px;
+       top: 160px;
+	}
+	#topbar .top-right-btn {
+		display: none;
+	}
+	#topbar .top-right-list {
+		display: none;
+	}
+    #topbar	.top-right-logo {
+		display: block;
+		position: absolute;
+    	right: 24px;
+    	top: -60px;
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn {
+		/*display: flex;
+		position: absolute;
+   		top: -956px;
+    	background: white;
+    	padding: 26px 4px 10px;*/
+    	display: none;
+	}
+	.primaryBtn {
+		padding: 0 2px;
+	}
+	 #Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn2 a {
+	 	font-size: 12px;
+	 }
+	 #Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn1, #Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn {
+	 	margin-right: 4px;
+	 }
+	 #Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn2  {
+	 	margin-right: 4px;
+	 }
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3{
+		padding: 20px 5px 23px;
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .search-text {
+    padding: 0px 8px;
+    margin: 18px 0px 0px 0px;
+    display: block;
+    width: 84%;
+    position: relative;
+    right: -48px;
+    border-radius: 0px;
+    height: 40px;
+    line-height: 40px;
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn {
+		display: block;
+    	text-align: center;
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn img {
+		
+	position: absolute;
+    left: 0;
+    border-radius: 0%;
+    height: 44px;
+    top: -4px;
+		
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .emojionearea .emojionearea-button {
+		position: absolute!important;
+    	top: -30px;
+    	right: 8%;
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .submite-camera-icon .comment-image {
+		position: absolute;
+    	top: 10px;
+    	right: 18%;
+	}
+	#cover-photo {
+		margin-top: 20px;
+	}
+	.reviews-box-inner {
+		position: absolute;
+    	background: white;
+    	bottom: -1960px !important;
+    	width: 100%;
+    	left: 0;
+	}
+	.reviews-box-title {
+		padding: 5px;
+	}
+	#Portfolio .container .portfolio-left .reviews-box .reviews-box-inner .reviews-box-item {
+		padding-left: 10px;
+	}
+	.portfolio-slide {
+		position: relative;
+	    top: 750px;
+	    width: 100%;
+	    background: white;
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice {
+		position: relative;
+    	top: -210px !important;
+	}
+	.portfolio-title {
+		padding: 2px 5px;
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .emojionearea .emojionearea-picker-position-top {
+		right: -40px;
+	}
+	portfolio-right-inner .portfolio-right-dice  {
+	position: absolute;
+    top: 30px;
+    background: white;
+	}
+	.portfolio-right  {
+		margin-top: 0px;
+		margin-bottom: 70px;
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner {
+		border: unset;
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom {
+		padding: unset;
+	}
+	#Portfolio .container .portfolio-left .portfolio-dice {
+		padding-bottom: 20px;
+	}
+	#Portfolio .container .portfolio-left .portfolio-icon {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	#Portfolio .container .portfolio-left .portfolio-icon {
+		display: block;
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn {
+		display: none;
+	}
+	.portfolio-title {
+		margin-top: 20px;
+	}
+	.portfolio-slide {
+		position: unset !important;
+	}
+	#topbar .container .top-left .top-left-inner {
+		display: block;
+	}
+	#topbar .container .top-left .top-left-inner .top-logo img {
+		max-height: 82px;
+	}
+	#topbar .container .top-right .top-right-logo img {
+		position: absolute;
+   	   top: -68px;
+       right: 75px;
+       max-height: 72px;
+	}
+	.profile-satting {
+		top: 113px;
+	}
+	#topbar .top-right-btn {
+		display: none;
+	}
+	#topbar .top-right-list {
+		display: none;
+	} 
+	#topbar .container .top-right {
+		padding-bottom: 20px;
+	}
+	#topbar .container .top-right .top-right-list ul li a {
+		font-size: 18px;
+	}
+	#topbar .container .top-right .top-right-list ul li {
+		font-size: 22px;
+	}
+	.st-cart-panel {
+		right: 63px;
+   		top: 154px;
+	}
+	#topbar .container .top-left .top-left-inner .top-search-bar .top-search-bar-inner {
+		display: none !important;
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .search-text {
+		width: 85%;
+   		height: 40px;
+    	line-height: 40px;
+	}
+	.reviews-box {
+		position: absolute;
+	    bottom: -248%;
+	    width: 108%;
+	    background: white;
+	    left: -4%;
+	    padding: 15px;
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .submite-camera-icon .comment-image {
+		top: 27px; 
+	}
+	
+	
+}
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice {
+		    top: -162px !important;
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .search-text {
+		width: 82%;
+	}
+}
+@media only screen and (min-width: 360px) and (max-width: 640px) {
+	
+	.reviews-box-inner {
+		bottom: -1882px !important;
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice {
+		top: -182px !important;
+	}	
+}
+@media only screen and (min-width: 411px) and (max-width: 823px) {
+	.portfolio-slide {
+		top: 782px !important;
+	}
+	.reviews-box-inner {
+		bottom: -1932px !important;
+	}
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 854px) {
+	.portfolio-slide {
+		position: relative;
+	    top: 825px !important;
+	    width: 100%;
+	    background: white;
+	}
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .search-text {
+		margin: 18px 0px 0px 5px;
+	}
+	.reviews-box-inner {
+		bottom: -2005px !important;
+	}	
+	#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice {
+		top: -225px !important;
+	}
+}
+@media screen and (min-width: 540px) and (max-width: 720px) {
+	.portfolio-slide {
+		top: 881px !important;
+	}
+	.reviews-box-inner {
+		    bottom: -2080px !important;
+	}
+	.portfolio-right {
+		margin-top: 0px;
+	}
+}
