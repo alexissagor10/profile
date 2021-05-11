@@ -1,0 +1,1271 @@
+@charset "utf-8";
+/*font-family: 'Krona One', sans-serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+/*	Template Details
+---------------------------------------------------------
+	Template :   SagorIT Ltd
+	Author :     Sagor Biswas
+	Author URI : http://www.kishorsaha650@gmail.com
+---------------------------------------------------------*/
+/*	List of sections
+---------------------------------------------------------
+	01. Basic Variables
+	02. Basic Typography
+	03. Custom CSS Classes
+	04. Topbar
+	05.cover-photo
+	06.Portfolio
+	00.profile-satting
+---------------------------------------------------------*/
+/* 01. Basic Variables
+-------------------------------------*/
+/* 02. Basic Typography
+-------------------------------------*/
+body {
+  background: #EBECEE;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #777777;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p {
+  font-size: 16px;
+  line-height: 170%;
+  color: #777777;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin: 0 0 24px;
+}
+a {
+  display: block;
+  color: #777777;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  line-height: 100%;
+  margin-bottom: 15px;
+  color: #444444;
+  font-size: 20px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  display: inline-block;
+  list-style: none;
+}
+section {
+  position: relative;
+  padding: 0px;
+  z-index: 0;
+}
+/*03. Custom CSS Classes
+-------------------------------------------------------*/
+.va-middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.primaryBtn {
+  background: transparent;
+  border: 1px solid #890100;
+  color: #444444;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 0.8s ease;
+}
+.primaryBtn.small {
+  height: 32px;
+  line-height: 32px;
+  padding: 0 26px;
+  font-size: 14px;
+  border-radius: 0px;
+  border: 1px solid #890100;
+  background: transparent;
+  color: #444444;
+  transition: all 0.8s ease;
+}
+.primaryBtn.small:hover {
+  background: #890100;
+  color: #ffffff;
+}
+.primaryBtn:hover {
+  background: rgba(137, 1, 0, 0.8);
+  border: 1px solid rgba(137, 1, 0, 0.8);
+  color: #ffffff;
+}
+.preloader {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #ffffff;
+  z-index: 99999999999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preloader img {
+  max-width: 400px;
+}
+/*04. Topbar
+--------------------------------------------------------------*/
+#topbar {
+  background: #ffffff;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  z-index: 99999;
+}
+#topbar.header-sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+#topbar .container {
+  max-width: 1350px;
+}
+#topbar .container .top-left .top-left-inner {
+  display: flex;
+}
+#topbar .container .top-left .top-left-inner .top-logo img {
+  max-height: 50px;
+}
+#topbar .container .top-left .top-left-inner .top-search-bar {
+  margin-left: 30px;
+}
+#topbar .container .top-left .top-left-inner .top-search-bar .top-search-bar-inner {
+  display: flex;
+  transition: all 0.3s ease;
+}
+#topbar .container .top-left .top-left-inner .top-search-bar .top-search-bar-inner .top-search-bar-input {
+  position: relative;
+}
+#topbar .container .top-left .top-left-inner .top-search-bar .top-search-bar-inner .top-search-bar-input .top-search-bar-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 10px;
+  color: black;
+  font-size: 14px;
+  line-height: 27px;
+}
+#topbar .container .top-left .top-left-inner .top-search-bar .top-search-bar-inner .top-search-bar-input input {
+  border: 1px solid #EBECEE;
+  padding: 0px 76px 0px 36px;
+  height: 34px;
+  line-height: 32px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+#topbar .container .top-left .top-left-inner .top-search-bar .top-search-bar-inner .top-search-bar-input input:focus {
+  border: 1px solid #EBECEE;
+  outline: none;
+}
+#topbar .container .top-left .top-left-inner .top-search-bar .top-search-bar-inner .top-search-bar-btn button {
+  border: 1px solid transparent;
+  background: #890100;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 30px;
+  height: 34px;
+  transition: all 0.3s ease;
+}
+#topbar .container .top-left .top-left-inner .top-search-bar .top-search-bar-inner .top-search-bar-btn button:focus {
+  outline: none;
+  border: 1px solid transparent;
+}
+#topbar .container .top-left .top-left-inner .top-search-bar .top-search-bar-inner .top-search-bar-btn button:hover {
+  background: rgba(137, 1, 0, 0.9);
+}
+#topbar .container .top-left .top-left-inner .top-search-bar .top-search-bar-inner:hover {
+  box-shadow: 0px 0px 4px 0px #EBECEE;
+}
+#topbar .container .top-right {
+  text-align: end;
+}
+#topbar .container .top-right .top-right-list ul li {
+  margin-right: 14px;
+}
+#topbar .container .top-right .top-right-list ul li a {
+  display: block;
+  font-size: 20px;
+  color: #444444;
+  transition: all 0.3s ease;
+}
+#topbar .container .top-right .top-right-list ul li a:hover {
+  color: #890100;
+}
+#topbar .container .top-right .top-right-list ul li:last-child {
+  margin-right: 0px;
+}
+#topbar .container .top-right .top-right-logo img {
+  max-height: 50px;
+}
+/*Starting cart-panel
+--------------------------------------------------------------*/
+.st-cart-panel {
+  padding-top: 10px;
+  width: 350px;
+  background: white;
+  height: auto;
+  border: 1px solid #ecedef;
+  position: absolute;
+  right: 36px;
+  top: 62px;
+  display: block;
+  float: left;
+  display: none;
+}
+.st-cart-panel:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 192px;
+  font-size: 22px;
+  display: inline-block;
+  border-bottom: 20px solid #ffffff;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  z-index: 999999999;
+}
+.st-cart-panel:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -22px;
+  right: 191px;
+  width: 0;
+  height: 0;
+  border-bottom: 21px solid #ecedef;
+  border-left: 21px solid transparent;
+  border-right: 21px solid transparent;
+  z-index: 9999999;
+}
+.st-cart-panel.show {
+  display: block;
+}
+.st-cart-panel .st-cart-panel-upper .cart-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px 25px;
+  float: left;
+  width: 100%;
+  display: block;
+}
+.st-cart-panel .st-cart-panel-upper .cart-item .cart-img {
+  max-width: 50px;
+  width: 20%;
+  float: left;
+}
+.st-cart-panel .st-cart-panel-upper .cart-item .cart-img img {
+  width: 100%;
+}
+.st-cart-panel .st-cart-panel-upper .cart-item .cart-content {
+  position: relative;
+  top: -10px;
+  float: left;
+  padding: 0 20px;
+}
+.st-cart-panel .st-cart-panel-upper .cart-item .cart-content .cart-title h3 a {
+  color: #202428;
+  font-size: 16px;
+  font-weight: 500;
+  color: #444444;
+}
+.st-cart-panel .st-cart-panel-upper .cart-item .cart-content .cart-price span {
+  display: block;
+  line-height: 100%;
+  color: #890100;
+  font-weight: 400;
+}
+.st-cart-panel .st-cart-panel-upper .cart-item .cart-close-btn {
+  float: right;
+}
+.st-cart-panel .st-cart-panel-upper .cart-item .cart-close-btn a {
+  color: #202428;
+  cursor: pointer;
+}
+.st-cart-panel .st-cart-panel-lower {
+  float: left;
+  width: 100%;
+  padding: 30px 0px;
+  text-align: center;
+}
+.st-cart-panel .st-cart-panel-lower .cart-subtotal-price {
+  margin-bottom: 20px;
+}
+.st-cart-panel .st-cart-panel-lower .cart-subtotal-price .sutotal-label {
+  color: #202428;
+}
+.st-cart-panel .st-cart-panel-lower .cart-subtotal-price .subtotal-value {
+  color: #890100;
+}
+.st-cart-panel .st-cart-panel-lower .cart-subtotal-btn a {
+  font-size: 12px;
+}
+/*05.cover-photo
+--------------------------------------------------------------*/
+#cover-photo {
+  margin-top: 66px;
+}
+#cover-photo .container {
+  background: #fff;
+  padding: 8px 23px 0px 23px;
+}
+/*06.Portfolio
+---------------------------------------------------------------*/
+#Portfolio .container {
+  background: #fff;
+  padding: 0px 23px 0px 23px;
+}
+#Portfolio .container .portfolio-left {
+  padding: 0 10px 20px 16px;
+  border-left: 1px solid #C2C2C2;
+  border-bottom: 1px solid #C2C2C2;
+  border-right: 1px solid #C2C2C2;
+  position: relative;
+}
+#Portfolio .container .portfolio-left .portfolio-inner {
+  display: flex;
+}
+#Portfolio .container .portfolio-left .portfolio-inner .portfolio-logo {
+  position: relative;
+  top: -48px;
+}
+#Portfolio .container .portfolio-left .portfolio-inner .portfolio-logo:after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  background: #00C81A;
+  border-radius: 100%;
+  bottom: 10px;
+  right: 10px;
+  border: 2px solid white;
+}
+#Portfolio .container .portfolio-left .portfolio-inner .portfolio-logo a img {
+  max-width: 150px;
+}
+#Portfolio .container .portfolio-left .portfolio-inner .portfolio-status-btn {
+  padding-left: 14px;
+}
+#Portfolio .container .portfolio-left .portfolio-inner .portfolio-status-btn .portfolio-btn {
+  padding: 16px 0px;
+}
+#Portfolio .container .portfolio-left .portfolio-inner .portfolio-status-btn .portfolio-btn a {
+  display: block;
+  font-size: 12px;
+}
+#Portfolio .container .portfolio-left .portfolio-inner .portfolio-status-btn .portfolio-btn a.primaryBtn {
+  background: transparent;
+  border: 1px solid #890100;
+  color: #444444;
+  transition: all 0.3s ease;
+  border-radius: unset;
+}
+#Portfolio .container .portfolio-left .portfolio-inner .portfolio-status-btn .portfolio-btn a.primaryBtn i {
+  margin-right: 8px;
+  color: #890100;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+#Portfolio .container .portfolio-left .portfolio-inner .portfolio-status-btn .portfolio-btn a.primaryBtn:hover {
+  border: 1px solid #890100;
+  background: #EBECEE;
+  color: #000000;
+}
+#Portfolio .container .portfolio-left .portfolio-inner .portfolio-status-btn .portfolio-btn a.primaryBtn:hover i {
+  color: #890100;
+}
+#Portfolio .container .portfolio-left .portfolio-inner .portfolio-status p {
+  color: #444444;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+#Portfolio .container .portfolio-left .portfolio-inner .portfolio-status p span {
+  color: #00C81A;
+  display: inline-block;
+}
+#Portfolio .container .portfolio-left .portfolio-icon {
+  position: absolute;
+  top: 114px;
+  display: none;
+}
+#Portfolio .container .portfolio-left .portfolio-icon ul li a {
+  margin-right: 13px;
+}
+#Portfolio .container .portfolio-left .portfolio-icon ul li a i {
+  font-size: 23px;
+  color: #890100;
+}
+#Portfolio .container .portfolio-left .portfolio-icon ul li a.video-icon img {
+  max-height: 23px;
+  position: relative;
+  top: -4px;
+  display: inline-block;
+  cursor: pointer;
+}
+#Portfolio .container .portfolio-left .portfolio-icon ul li a.offer-item img {
+  max-height: 20px;
+  position: relative;
+  top: -4px;
+  display: inline-block;
+  cursor: pointer;
+}
+#Portfolio .container .portfolio-left .portfolio-left-name h2 {
+  text-transform: capitalize;
+  font-size: 22px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+#Portfolio .container .portfolio-left .portfolio-left-name p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 150%;
+  color: #444444;
+  text-transform: capitalize;
+}
+#Portfolio .container .portfolio-left .portfolio-left-address {
+  padding-bottom: 30px;
+}
+#Portfolio .container .portfolio-left .portfolio-left-address p {
+  color: #444444;
+  font-size: 14px;
+  line-height: 130%;
+  padding-top: 10px;
+  text-transform: capitalize;
+}
+#Portfolio .container .portfolio-left .portfolio-left-address span {
+  display: block;
+  font-size: 22px;
+  font-weight: 900;
+  color: #000000;
+}
+#Portfolio .container .portfolio-left .portfolio-left-address span i {
+  color: #890100;
+  font-size: 18px;
+  margin-left: 5px;
+  position: relative;
+  top: -2px;
+}
+#Portfolio .container .portfolio-left .portfolio-dice {
+  padding-bottom: 50px;
+}
+#Portfolio .container .portfolio-left .portfolio-dice .portfolio-dice-text h5 {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+#Portfolio .container .portfolio-left .portfolio-dice .portfolio-dice-text p {
+  color: #444444;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.2px;
+  padding: 0 10px;
+}
+#Portfolio .container .portfolio-left .portfolio-dice .portfolio-dice-text p a {
+  color: #890100;
+  font-weight: 600;
+  font-size: 12px;
+}
+#Portfolio .container .portfolio-left .portfolio-dice .portfolio-dice-language h5 {
+  font-size: 16px;
+  color: #444444;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+#Portfolio .container .portfolio-left .portfolio-dice .portfolio-dice-language .language-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+#Portfolio .container .portfolio-left .portfolio-dice .portfolio-dice-language .language-list h4 {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+#Portfolio .container .portfolio-left .portfolio-dice .portfolio-dice-language .language-list span {
+  display: inline-block;
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+#Portfolio .container .portfolio-left .portfolio-dice .portfolio-dice-language .language-list span:hover {
+  color: #890100;
+}
+#Portfolio .container .portfolio-left .portfolio-dice .portfolio-dice-language h2 {
+  margin: 20px 0px 0px 0px;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+#Portfolio .container .portfolio-left .portfolio-dice .portfolio-dice-language .skill-list .skill-list-inner .skill1 {
+  border-radius: 15px;
+  border: 1px solid #EBECEE;
+  margin: 16px 5px 0px 0px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 0 10px 0 10px;
+}
+#Portfolio .container .portfolio-left .portfolio-dice .portfolio-dice-language .skill-list .skill-list-inner .skill2 {
+  border-radius: 15px;
+  border: 1px solid #EBECEE;
+  margin: 16px 5px 0px 0px;
+  height: 30px;
+  background: #EBECEE;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 0 10px 0 10px;
+  transition: all 0.3s ease;
+}
+#Portfolio .container .portfolio-left .portfolio-dice .portfolio-dice-language .skill-list .skill-list-inner .skill2:hover {
+  background: #890100;
+  color: #ffffff;
+}
+#Portfolio .container .portfolio-left .reviews-box .reviews-box-inner .reviews-box-title h6 {
+  font-size: 16px;
+  color: #444444;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+#Portfolio .container .portfolio-left .reviews-box .reviews-box-inner .reviews-box-item {
+  position: relative;
+  display: flex;
+  padding-top: 20px;
+}
+#Portfolio .container .portfolio-left .reviews-box .reviews-box-inner .reviews-box-item:after {
+  content: "";
+  position: absolute;
+  width: 88%;
+  height: 1px;
+  background: #C2C2C2;
+  left: 0%;
+  bottom: 0%;
+}
+#Portfolio .container .portfolio-left .reviews-box .reviews-box-inner .reviews-box-item .reviews-left {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #9E9E9E;
+}
+#Portfolio .container .portfolio-left .reviews-box .reviews-box-inner .reviews-box-item .reviews-right {
+  margin-left: 12px;
+}
+#Portfolio .container .portfolio-left .reviews-box .reviews-box-inner .reviews-box-item .reviews-right .reviews-right-title h5 {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
+}
+#Portfolio .container .portfolio-left .reviews-box .reviews-box-inner .reviews-box-item .reviews-right .reviews-right-text p {
+  font-size: 11px;
+  color: #444444;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+#Portfolio .container .portfolio-left .reviews-box .reviews-box-inner .reviews-box-item .reviews-right .reviews-right-text p a {
+  color: #890100;
+  font-weight: 700;
+}
+#Portfolio .container .portfolio-left .reviews-box .reviews-box-inner .reviews-box-item .reviews-right .reviews-right-reating-inner {
+  display: flex;
+  justify-content: space-between;
+}
+#Portfolio .container .portfolio-left .reviews-box .reviews-box-inner .reviews-box-item .reviews-right .reviews-right-reating-inner .reviews-right-reating ul li {
+  font-size: 12px;
+  font-weight: 600;
+  color: #890100;
+}
+#Portfolio .container .portfolio-left .reviews-box .reviews-box-inner .reviews-box-item .reviews-right .reviews-right-reating-inner .reviews-right-reating ul li.reating1 {
+  margin-right: 5px;
+  color: #000000;
+  font-size: 12px;
+}
+#Portfolio .container .portfolio-left .reviews-box .reviews-box-inner .reviews-box-item .reviews-right .reviews-right-reating-inner .reviews-right-date {
+  margin-left: 12px;
+}
+#Portfolio .container .portfolio-left .reviews-box .reviews-box-inner .reviews-box-item .reviews-right .reviews-right-reating-inner .reviews-right-date p {
+  font-size: 10px;
+  color: #444444;
+}
+#Portfolio .container .portfolio-left .reviews-box .reviews-box-inner .reviews-box-item:last-child:after {
+  content: "";
+  display: none;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn {
+  display: flex;
+  padding: 16px 0 0px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn2,
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn4,
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn1 {
+  margin-right: 10px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn2 a,
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn4 a,
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn1 a {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn2 a i,
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn4 a i,
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn1 a i {
+  color: #890100;
+  font-size: 16px;
+  margin-right: 5px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn2 a:hover,
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn4 a:hover,
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn1 a:hover {
+  background: #EBECEE;
+  color: #000000;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn2 a:hover i,
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn4 a:hover i,
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn1 a:hover i {
+  transition: all 0.3s ease;
+  color: #890100;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn4 a img {
+  max-height: 20px;
+  color: #890100;
+  position: relative;
+  top: -2px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn4 a:hover {
+  background: #EBECEE;
+  color: #000000;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn5 a img {
+  max-height: 16px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-btn .btn5 a:hover {
+  background: #EBECEE;
+  color: #000000;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-slide .portfolio-title h5 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-slide .slider-class .owl-theme .owl-nav {
+  margin: 0px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-slide .slider-class .owl-theme .owl-nav [class*=owl-] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  outline: none;
+  box-shadow: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-slide .slider-class .owl-theme .owl-nav [class*=owl-] span {
+  width: 20px;
+  height: 50px;
+  line-height: 50px;
+  background: #890100;
+  color: #ffffff;
+  display: block;
+  font-size: 10px;
+  transition: all 0.3s ease;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-slide .slider-class .owl-theme .owl-nav [class*=owl-] span:hover {
+  background: rgba(137, 1, 0, 0.8);
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-slide .slider-class .owl-theme .owl-nav .owl-prev {
+  left: -22px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-slide .slider-class .owl-theme .owl-nav .owl-next {
+  right: -22px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice {
+  border: 2px solid #f3eded;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-top .portfolio-dice-top-inner {
+  padding: 12px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-top .portfolio-dice-top-inner .portfolio-right-dice-profile {
+  display: flex;
+  padding-bottom: 18px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-top .portfolio-dice-top-inner .portfolio-right-dice-profile .portfolio-right-dice-img {
+  padding-right: 30px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-top .portfolio-dice-top-inner .portfolio-right-dice-profile .portfolio-right-dice-details p {
+  color: #C3C3C3;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-top .portfolio-dice-top-inner .portfolio-right-dice-profile .portfolio-right-dice-details p strong {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-top .portfolio-dice-top-inner .portfolio-right-dice-profile .portfolio-right-dice-details p span {
+  display: inline-block;
+  color: #908f8f;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-top .portfolio-dice-top-inner .portfolio-right-dice-text p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #444444;
+  text-transform: capitalize;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-middle {
+  padding-bottom: 15px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom {
+  padding: 16px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner {
+  border: 1px solid #C2C2C2;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom1 {
+  border-bottom: 1px solid #C2C2C2;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom1 .portfolio-make-box1 {
+  display: flex;
+  justify-content: space-around;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom1 .portfolio-make-box1 .make-box1 span {
+  line-height: 50px;
+  color: #1E7013;
+  display: block;
+  font-size: 22px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom1 .portfolio-make-box1 .make-box2 span {
+  line-height: 50px;
+  font-size: 22px;
+  color: #444444;
+  display: block;
+  transition: all 0.3s ease;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom1 .portfolio-make-box1 .make-box2 span:hover {
+  color: #890100;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom1 .portfolio-make-box1 .make-box3 span {
+  line-height: 50px;
+  font-size: 22px;
+  color: #444444;
+  display: block;
+  transition: all 0.3s ease;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom1 .portfolio-make-box1 .make-box3 span:hover {
+  color: #890100;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom2 {
+  border-bottom: 1px solid #C2C2C2;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom2 .portfolio-make-box2 a {
+  padding: 0 30px;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 500;
+  color: #444444;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom2 .portfolio-make-box2 a i {
+  margin-right: 10px;
+  line-height: 50px;
+  color: #1E7013;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 {
+  padding: 20px 40px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn {
+  position: relative;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .search-text {
+  display: inline-block;
+  width: 500px;
+  border: none;
+  box-shadow: 0px 0px 3px 0px #8bbdb8;
+  line-height: 34px;
+  margin-left: 32px;
+  border-radius: 2px;
+  padding: 0 15px;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: black;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .search-text:focus {
+  outline: none;
+  box-shadow: 0px 0px 7px 0px #8bbdb8;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn #emojionearea {
+  border: none;
+  outline: none;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .emojionearea {
+  border: none !important;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .emojionearea .emojionearea-editor {
+  display: none !important;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .emojionearea .emojionearea-button {
+  position: absolute !important;
+  position: absolute!important;
+  top: -43px;
+  right: 40px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .emojionearea .emojionearea-picker-position-top {
+  margin-top: -320px;
+  right: 25px;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .submite-camera-icon .comment-image {
+  position: absolute;
+  top: 22px;
+  right: 13%;
+  cursor: pointer;
+}
+#Portfolio .container .portfolio-right .portfolio-right-inner .portfolio-right-dice .portfolio-dice-bottom .portfolio-dice-bottom-inner .portfolio-dice-bottom3 .portfolio-make-box3 .submit-btn .submite-camera-icon .comment-image .camera-bottom3 {
+  display: none;
+}
+/*00.profile-satting
+--------------------------------------------------------------*/
+.profile-satting {
+  width: 250px;
+  height: auto;
+  background: white;
+  padding: 20px;
+  position: absolute;
+  top: 62px;
+  right: 2px;
+  display: none;
+}
+.profile-satting .profile-satting-top .profile-satting-top-inner {
+  display: flex;
+  border-bottom: 1px solid #EBECEE;
+  padding-bottom: 20px;
+}
+.profile-satting .profile-satting-top .profile-satting-top-inner .profile-satting-logo {
+  margin-right: 10px;
+}
+.profile-satting .profile-satting-top .profile-satting-top-inner .profile-satting-address h5 {
+  margin-bottom: 0px;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #444444;
+}
+.profile-satting .profile-satting-top .profile-satting-top-inner .profile-satting-address a {
+  color: #444444;
+  font-size: 14px;
+  text-transform: lowercase;
+}
+.profile-satting .profile-satting-item ul li {
+  display: block;
+}
+.profile-satting .profile-satting-item ul li a {
+  line-height: 50px;
+  border-bottom: 1px solid #EBECEE;
+  transition: all 0.3s ease;
+  color: #777777;
+  font-size: 14px;
+}
+.profile-satting .profile-satting-item ul li a:hover {
+  color: #444444;
+}
+.profile-satting .profile-satting-item ul li a:hover i {
+  color: #444444;
+}
+.profile-satting .profile-satting-item ul li a i {
+  font-size: 30px;
+  color: #890100;
+  margin-right: 15px;
+  position: relative;
+  top: 8px;
+}
+/*00.calender-item
+-----------------------------------------------------*/
+.calender-item {
+  width: 360px;
+  height: auto;
+  background: #fff;
+  border: 1px solid #ecedef;
+  position: absolute;
+  top: 62px;
+  right: 115px;
+  z-index: 99999;
+  display: none;
+}
+.calender-item:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 76px;
+  font-size: 22px;
+  display: inline-block;
+  border-bottom: 20px solid #ffffff;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+.calender-item:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -22px;
+  right: 75px;
+  width: 0;
+  height: 0;
+  border-bottom: 21px solid #ecedef;
+  border-left: 21px solid transparent;
+  border-right: 21px solid transparent;
+}
+.calender-item .calender-item-title {
+  border-bottom: 1px solid #EBECEE;
+  padding: 20px;
+}
+.calender-item .calender-item-title h5 {
+  font-size: 16px;
+  color: #890100;
+  margin-bottom: 0px;
+}
+.calender-item .calender-item-inner {
+  display: flex;
+  padding: 6px 20px;
+  border-bottom: 1px solid #EBECEE;
+  transition: all 0.3s ease;
+}
+.calender-item .calender-item-inner:hover {
+  background: #EBECEE;
+}
+.calender-item .calender-item-inner .calender-item-inner-text {
+  margin-left: 20px;
+}
+.calender-item .calender-item-inner .calender-item-inner-text h5 {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  text-transform: capitalize;
+}
+.calender-item .calender-item-inner .calender-item-inner-text span {
+  display: block;
+  color: #890100;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.calender-item .calender-item-inner .calender-item-inner-text p {
+  display: block;
+  color: black;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 0px;
+}
+.calender-item .item-dismiss-class {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 20px;
+}
+.calender-item .item-dismiss-class a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #890100;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+.calender-item .item-dismiss-class a:hover {
+  color: #444444;
+}
+.calender-item .item-dismiss-class .class1 {
+  margin-right: 15px;
+}
+.calender-item .calender-item-btns {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0px;
+}
+.calender-item .calender-item-btns .item-btn1 select {
+  width: 230px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  color: black;
+}
+/*00.top-message
+----------------------------------------------------*/
+.top-message {
+  width: 360px;
+  height: auto;
+  background: #fff;
+  border: 1px solid #ecedef;
+  position: absolute;
+  top: 60px;
+  right: 78px;
+  z-index: 99999;
+  display: none;
+}
+.top-message.show {
+  display: block;
+}
+.top-message:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 76px;
+  font-size: 22px;
+  display: inline-block;
+  border-bottom: 20px solid #ffffff;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+.top-message:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -22px;
+  right: 75px;
+  width: 0;
+  height: 0;
+  border-bottom: 21px solid #ecedef;
+  border-left: 21px solid transparent;
+  border-right: 21px solid transparent;
+}
+.top-message .top-message-inner {
+  padding: 20px 10px;
+}
+.top-message .top-message-inner .top-message-searchbtn {
+  display: flex;
+  border: 1px solid #890100;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+.top-message .top-message-inner .top-message-searchbtn:hover {
+  box-shadow: 0px 0px 2px 0px #444444;
+}
+.top-message .top-message-inner .top-message-searchbtn button {
+  border: none;
+  background: #890100;
+  width: 40px;
+  transition: all 0.3s ease;
+}
+.top-message .top-message-inner .top-message-searchbtn button:hover {
+  background: rgba(137, 1, 0, 0.8);
+}
+.top-message .top-message-inner .top-message-searchbtn button a {
+  color: white;
+  font-size: 16px;
+}
+.top-message .top-message-inner .top-message-searchbtn input {
+  line-height: 34px;
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+  font-size: 14px;
+  text-transform: capitalize;
+  border: none;
+}
+.top-message .top-message-inner .top-message-searchbtn input:focus {
+  outline: none;
+}
+.top-message .top-message-inner .top-message-dice {
+  display: flex;
+  padding-bottom: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.top-message .top-message-inner .top-message-dice .top-message-text {
+  margin-left: 15px;
+}
+.top-message .top-message-inner .top-message-dice .top-message-text h5 {
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.top-message .top-message-inner .top-message-dice .top-message-text h5:hover {
+  color: #890100;
+}
+.top-message .top-message-inner .top-message-dice .top-message-text p {
+  font-size: 13px;
+  color: #444444;
+  line-height: 130%;
+  margin: 0px;
+  transition: all 0.3s ease;
+}
+.top-message .top-message-inner .top-message-dice .top-message-text p:hover {
+  color: #890100;
+}
+.top-message .top-message-inner .top-message-dice:last-child {
+  padding-bottom: 0px;
+}
+/*00.top-notifications
+-----------------------------------------------------*/
+.top-notifications {
+  width: 360px;
+  height: auto;
+  background: #fff;
+  border: 1px solid #ecedef;
+  position: absolute;
+  top: 60px;
+  right: 41px;
+  padding: 10px 0px;
+  z-index: 99999;
+  display: none;
+}
+.top-notifications:after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 76px;
+  font-size: 22px;
+  display: inline-block;
+  border-bottom: 20px solid #ffffff;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+.top-notifications:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -22px;
+  right: 75px;
+  width: 0;
+  height: 0;
+  border-bottom: 21px solid #ecedef;
+  border-left: 21px solid transparent;
+  border-right: 21px solid transparent;
+}
+.top-notifications .top-notifications-inner .top-notifications-title a {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #890100;
+}
+.top-notifications .top-notifications-inner .top-notifications-title a i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.top-notifications .top-notifications-inner .top-notifications-dice {
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.top-notifications .top-notifications-inner .top-notifications-dice .top-notifications-text {
+  margin-left: 10px;
+}
+.top-notifications .top-notifications-inner .top-notifications-dice .top-notifications-text h5 {
+  font-size: 14px;
+  color: #444444;
+  text-transform: capitalize;
+  margin: 0px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.top-notifications .top-notifications-inner .top-notifications-dice .top-notifications-text h5:hover {
+  color: #890100;
+}
+.top-notifications .top-notifications-inner .top-notifications-dice .top-notifications-text p {
+  font-size: 10px;
+  color: #444444;
+  text-transform: capitalize;
+  margin: 0px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.top-notifications .top-notifications-inner .top-notifications-dice .top-notifications-text p:hover {
+  color: #890100;
+}
+/*starting-toggle-panel
+---------------------------------------------------------------*/
+.toggle-panel .toggle-panel-inner {
+  width: 250px;
+  height: 400px;
+  background: #fff;
+  border-top: 3px solid #890100;
+  padding: 20px 0px;
+  position: absolute;
+  top: 62px;
+  right: 176px;
+  display: none;
+  z-index: 999999;
+}
+.toggle-panel .toggle-panel-inner ul li {
+  display: block;
+  border-bottom: 1px solid #EBECEE;
+}
+.toggle-panel .toggle-panel-inner ul li a {
+  line-height: 50px;
+  font-size: 14px;
+  color: #444444;
+  padding: 0px 20px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+.toggle-panel .toggle-panel-inner ul li a:hover {
+  color: #890100;
+}
+.toggle-panel .toggle-panel-inner ul li a:hover i {
+  color: #890100;
+}
+.toggle-panel .toggle-panel-inner ul li a i {
+  margin-right: 8px;
+  font-size: 12px;
+  color: #444444;
+}
